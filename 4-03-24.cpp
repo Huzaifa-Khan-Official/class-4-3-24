@@ -171,61 +171,103 @@ main()
 
     // task 6
     
-    int rows, i, k, j, l, m, n, o, p;
+    // int rows, i, k, j, l, m, n, o, p;
+    // cout << "Enter the number of rows: ";
+    // cin >> rows;
+    
+    // for (i = 1; i <= rows; i++)
+    // {
+    //     for (k = 1; k <= rows-i; k++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     for (j = 1; j <= i; j++)
+    //     {
+    //         if (j == 1)
+    //         {
+    //           cout << j; 
+    //         } else {
+    //             cout << " ";
+    //         }
+            
+    //     }
+    //     for (l = i - 1; l >= 1; l--)
+    //     {
+    //         if (l == 1)
+    //         {
+    //           cout << l; 
+    //         } else {
+    //             cout << " ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+    // for (m = rows - 1; m >= 1; m--)
+    // {
+    //     for (n = 1; n <= rows-m; n++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     for (o = 1; o <= m; o++)
+    //     {
+    //         if (o == 1)
+    //         {
+    //             cout << o;
+    //         }
+    //         else {
+    //             cout << " ";
+    //         }
+    //     }
+    //     for (p = m - 1; p >= 1; p--)
+    //     {
+    //         if (p == 1)
+    //         {
+    //             cout << p;
+    //         } else {
+    //             cout << " ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+
+
+
+
+// task 7
+    int rows, i, j, k, l, m, n, o;
     cout << "Enter the number of rows: ";
     cin >> rows;
     
-    for (i = 1; i <= rows; i++)
+    for (i = rows; i >= 1; i--)
     {
-        for (k = 1; k <= rows-i; k++)
+        for (j = 1; j <= i; j++)    
+        {
+            cout << j;
+        }
+        for (l = 1; l <= 2 * (rows - i); l++)
         {
             cout << " ";
         }
-        for (j = 1; j <= i; j++)
+        for (k = i; k >= 1; k--)
         {
-            if (j == 1)
-            {
-               cout << j; 
-            } else {
-                cout << " ";
-            }
-            
-        }
-        for (l = i - 1; l >= 1; l--)
-        {
-            if (l == 1)
-            {
-               cout << l; 
-            } else {
-                cout << " ";
-            }
+            cout << k;
         }
         cout << endl;
     }
-    for (m = rows - 1; m >= 1; m--)
+    
+    for (m = 1; m <= rows; m++)
     {
-        for (n = 1; n <= rows-m; n++)
+        for (n = 1; n<= m; n++)
+        {
+            cout << n;
+        }
+        for(l = 2 * (rows - m); l >= 1; l--)
         {
             cout << " ";
         }
-        for (o = 1; o <= m; o++)
+        for (o = m; o >= 1; o--)
         {
-            if (o == 1)
-            {
-                cout << o;
-            }
-            else {
-                cout << " ";
-            }
-        }
-        for (p = m - 1; p >= 1; p--)
-        {
-            if (p == 1)
-            {
-                cout << p;
-            } else {
-                cout << " ";
-            }
+            cout << o;
         }
         cout << endl;
     }
